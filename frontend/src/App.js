@@ -1,11 +1,13 @@
-import Campo from "./componentes/Campo";
-import Botao from "./componentes/Botao";
-import './App.css';
+import React from "react";
+import Formulario from "./componentes/Formulario";
+import NavBar from "./componentes/NavBar";
 
 function App() {
   return (
-    <Campo></Campo>
-  );
+    <div>
+      <NavBar/>
+      <Formulario/>
+    </div>
+  )
 }
-
 export default App;

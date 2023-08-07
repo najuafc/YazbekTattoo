@@ -1,20 +1,21 @@
 import * as React from 'react';
-import Box from '@mui/material/Box';
 import TextField from '@mui/material/TextField';
+import Box from '@mui/material/Box';
 
-export default function BasicTextFields() {
+const Campo = ({ label, value, onChange, type = "text"}) => {
   return (
-    <Box
-      component="form"
-      sx={{
-        '& > :not(style)': { m: 1, width: '25ch' },
-      }}
-      noValidate
-      autoComplete="off"
-    >
-      <TextField id="outlined-basic" label="Outlined" variant="outlined" />
-      <TextField id="filled-basic" label="Filled" variant="filled" />
-      <TextField id="standard-basic" label="Standard" variant="standard" />
+    <Box display="flex" flexDirection="column" alignItems="flex-start" margin="10px">
+      <TextField
+        label = {label}
+        value = {value}
+        onChange = {onChange}
+        type = {type}
+        required
+        variant='outlined'
+        InputLabelProps={{ shrink: true }}
+      />
     </Box>
   );
-}
+};
+
+export default Campo; 
