@@ -2,7 +2,21 @@ import * as React from 'react';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 
-const Campo = ({ label, value, onChange, type = "text"}) => {
+const Campo = ({ label, value, onChange, type}) => {
+  if (type === "file") {
+    return (
+      <Box margin="10px">
+        <TextField
+          label = {label}
+          onChange={onChange}
+          type='file'
+          InputLabelProps={{ shrink: true }}
+          required
+        />
+      </Box>
+    );
+  };
+
   return (
     <Box display="flex" flexDirection="column" alignItems="flex-start" margin="10px">
       <TextField
