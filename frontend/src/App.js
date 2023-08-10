@@ -8,6 +8,7 @@ function App() {
       <NavBar/>
       <Formulario/>
     </div>
-  )
-}
+  );
+};
+
 export default App;
