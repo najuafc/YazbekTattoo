@@ -1,9 +1,13 @@
 import * as React from 'react';
 import Formulario from "./Formulario";
+import NavBar from './NavBar';
 
-const Agendamento = () => {
+function Agendamento() {
     return (
-        <Formulario/>
+        <div>
+            <NavBar/>
+            <Formulario/>
+        </div>
     );
 };
 
