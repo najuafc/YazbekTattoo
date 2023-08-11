@@ -8,7 +8,7 @@ function Sobre() {
             <NavBar/>
             <div>
                 <h2>Trajetória</h2>
-                <p>Olá! Sou Ricardo, e minha jornada é uma história de transformação e paixão. Por anos, servi como policial, dedicado a proteger nossa comunidade e manter a lei. Mas, em meio a essa trajetória, encontrei uma paixão inesperada que me levou por um novo caminho.
+                <p>Olá! Sou Rodrigo e minha jornada é uma história de transformação e paixão. Por anos, servi como policial, dedicado a proteger nossa comunidade e manter a lei. Mas, em meio a essa trajetória, encontrei uma paixão inesperada que me levou por um novo caminho.
 
 Minha vida mudou quando conheci Miguel, um tatuador talentoso. Enquanto conversávamos, percebi que a tatuagem era mais do que arte na pele; era uma forma de contar histórias únicas e profundas. Essa conversa despertou algo em mim, e comecei a explorar a arte da tatuagem.
 
