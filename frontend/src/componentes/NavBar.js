@@ -1,18 +1,30 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { styled } from '@mui/system';
+import { styled, ThemeProvider } from '@mui/system';
 import Grid from '@mui/material/Grid';
+import { createTheme } from '@mui/material/styles';
 
-const NavList = styled('ul')({
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#d32f2f',
+    },
+    secondary: {
+      main: '#ffc107',
+    },
+  },
+});
+
+const NavList = styled('ul')(({theme}) => ({
   display: 'flex',
   flexDirection: 'row',
   listStyleType: 'none',
   padding: 40,
   width: '100%',
   justifyContent:'flex-end',
-  backgroundColor: 'lightblue',
+  backgroundColor: theme.palette.primary.main,
   marginTop: 0
-});
+}));
 const NavItem = styled('li')({
   marginLeft: 16,
   padding:10
@@ -20,6 +32,7 @@ const NavItem = styled('li')({
 });
 const NavBar = () => {
   return (
+    <ThemeProvider theme={theme}>
       <Grid container justifyContent='start'>
         <NavList>
         <NavItem><Link to="/" style={{ textDecoration: 'none', color:'black' }}>Página Inicial</Link></NavItem>
@@ -29,6 +42,7 @@ const NavBar = () => {
         <NavItem><Link to="/depoimentos" style={{ textDecoration: 'none', color:'black' }}>Depoimentos</Link></NavItem>
         </NavList>
       </Grid>
+    </ThemeProvider>
   );
 };
 
