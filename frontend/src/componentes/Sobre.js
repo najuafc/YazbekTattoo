@@ -23,7 +23,8 @@ const SobreImage = styled('img')({
     gap: '10px', // Espaçamento entre as colunas
     alignItems: 'center', // Centraliza verticalmente o conteúdo
     justifyContent: 'space-between',
-    backgroundColor: '#d13529',
+    backgroundColor: '#0b0000',
+    opacity: 0.9
   });
 
   const TextoTrajetoria = styled('p')({
@@ -32,11 +33,12 @@ const SobreImage = styled('img')({
     padding: '20px',
     marginRight: '40%',
     fontSize: '18px',
+    color: '#b9b9b9'
   });
   
   const TituloTrajetoria = styled('h2')({
     fontSize: '24px',
-    color: 'black'
+    color: '#b9b9b9'
   })
 
   

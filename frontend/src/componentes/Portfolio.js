@@ -13,6 +13,9 @@ const PortfolioContainer = styled(Grid)({
   display: 'grid',
   gridTemplateColumns: 'repeat(2, 1fr)', // Duas colunas
   gap: '16px', // Espaçamento entre as fotos
+  backgroundColor: '#0b0000',
+  opacity: 0.9,
+  padding: '40px'
 });
 
 const PortfolioImage = styled('img')({
