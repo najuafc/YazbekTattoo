@@ -5,10 +5,11 @@ import Grid from '@mui/material/Grid';
 import { createTheme } from '@mui/material/styles';
 import Logo from "./imagens/logo.png"
 
+
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#a51d1d',
+      main: '#c32c29',
     },
     secondary: {
       main: '#ffc107',
