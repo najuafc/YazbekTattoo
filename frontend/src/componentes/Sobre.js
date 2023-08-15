@@ -15,33 +15,41 @@ const SobreImage = styled('img')({
     backgroundColor: 'red',
     gap: '10px',
     marginTop: '5%',
+    marginBottom: '5%'
   });
 
   const SobreContainer = styled(Grid)({
     display: 'grid',
     gridTemplateColumns: '1fr 1fr', // Duas colunas com a mesma largura
     gap: '10px', // Espaçamento entre as colunas
-    alignItems: 'center', // Centraliza verticalmente o conteúdo
+    alignItems: 'center',
     justifyContent: 'space-between',
     backgroundColor: '#0b0000',
-    opacity: 0.9
+    opacity: "0.9",
   });
 
   const TextoTrajetoria = styled('p')({
-    justifyContent: 'center',
+    alignItems:'left',
     borderRadius : '8px',
-    padding: '20px',
-    marginRight: '40%',
+    padding: '0px',
     fontSize: '18px',
-    color: '#b9b9b9'
+    color: '#b9b9b9',
+    textAlign: 'justify'
   });
   
   const TituloTrajetoria = styled('h2')({
     fontSize: '24px',
-    color: '#b9b9b9'
-  })
+    color: '#b9b9b9',
+    fontWeight: 'bold'
+  });
 
-  
+  const CenteredContent = styled('div')({
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'left',
+    marginRight: '20%',
+    textAlign: 'left'
+});
 
 function Sobre() {
     return (
@@ -49,7 +57,7 @@ function Sobre() {
             <NavBar/>
             <SobreContainer>
                 <SobreImage src={FotoRodrigo}/>
-                <div>
+                <CenteredContent>
                     <TituloTrajetoria>Minha trajetória</TituloTrajetoria>
                     <TextoTrajetoria>Olá! 
                     Meu nome é Rodrigo e minha jornada é uma história de transformação e paixão. Por anos, servi como policial, dedicado a proteger nossa comunidade e manter a lei. Mas, em meio a essa trajetória, encontrei uma paixão inesperada que me levou por um novo caminho.
@@ -61,7 +69,7 @@ function Sobre() {
                     Hoje, tenho a alegria de administrar meu próprio estúdio de tatuagem, onde posso combinar minha dedicação anterior como policial com minha nova paixão pela arte da tatuagem. Cada tatuagem que crio é uma colaboração, uma manifestação de autoexpressão e uma lembrança duradoura das histórias das pessoas.
                     
                     Espero poder ajudar você a contar sua história única por meio da arte da tatuagem. Junte-se a mim nesta jornada criativa!</TextoTrajetoria>
-                </div>
+                </CenteredContent>
             </SobreContainer>
             <Footer/>
         </div>

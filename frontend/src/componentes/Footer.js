@@ -8,12 +8,16 @@ const FooterContainer = styled('footer')({
     padding: '30px',
     flexDirection: 'column', 
     alignItems: 'center',
+    paddingBottom: '3%',
+    paddingTop: '2.5%',
+    justifyContent: 'center'
 });
 
 const LinkColor = styled('a')({
     color: '#b9b9b9',
-    textDecoration: 'underlined',
-})
+    textDecoration: 'underline',
+    fontWeight: 'bold'
+});
 
 const Footer = () => {
     return (
