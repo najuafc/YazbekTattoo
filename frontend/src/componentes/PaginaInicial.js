@@ -3,6 +3,9 @@ import NavBar from './NavBar';
 import Footer from './Footer'; 
 import Carrossel from './Carrossel';
 import Botao from "./Botao";
+import { Link } from 'react-router-dom';
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './Theme'; // Importe o tema global
 
 function PaginaInicial() {
     return (
@@ -18,9 +21,11 @@ function PaginaInicial() {
                     <p>Nossos artistas talentosos combinam criatividade e habilidade para criar tatuagens que refletem sua personalidade e paixões.</p> 
                     <p>Com anos de experiência e um compromisso inabalável com a qualidade, estamos dedicados a transformar seus sonhos em obras de arte duradouras.</p>
                 </div>
-                <div id='botao-sobre'>
-                    <Botao label="Saiba mais" onClick='/sobre'/>
-                </div>
+                <Link to='/sobre'>
+                    <ThemeProvider theme={theme}>
+                        <Botao label="Saiba mais" style={{backgroundColor: 'blue', color: 'white'}}/>
+                    </ThemeProvider>
+                </Link>
             </div>
             <div id='footer'>
                 <Footer/>

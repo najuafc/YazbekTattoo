@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import Botao from "./Botao";
 import Campo from "./Campo";
+import { ThemeProvider } from '@mui/material/styles';
+import theme from './Theme';
 
 const Formulario = () => {
     const [nome, setNome] = useState('');
@@ -18,7 +20,9 @@ return (
         <Campo label="Telefone: " value={telefone} onChange={(e) => setTelefone(e.target.value)}/>
         <Campo label="Tamanho da tatuagem (em cm): " value={tamanho} type="number" onChange={(e) => setTamanho(e.target.value)}/>
         <Campo label="Imagem de referência: " value={referencia} type="file" onChange={(e) => setReferencia(e.target.files[0])}/>
-        <Botao label="Enviar" type="submit"/>
+        <ThemeProvider theme={theme}>
+            <Botao label="Enviar" type="submit"/>
+        </ThemeProvider>
         </form>
     </div>
 );
