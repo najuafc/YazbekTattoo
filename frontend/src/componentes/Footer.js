@@ -8,7 +8,6 @@ const FooterContainer = styled('footer')({
     padding: '30px',
     flexDirection: 'column', 
     alignItems: 'center',
-    marginTop: '5%',
 });
 
 const LinkColor = styled('a')({
