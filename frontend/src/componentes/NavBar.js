@@ -5,6 +5,17 @@ import Grid from '@mui/material/Grid';
 import { createTheme } from '@mui/material/styles';
 import Logo from "./imagens/logo.png"
 
+const theme = createTheme({
+  palette: {
+    primary: {
+      main: '#a51d1d',
+    },
+    secondary: {
+      main: '#ffc107',
+    },
+  },
+});
+
 const ImagemLogo = styled('img') ({
   marginLeft: '30px'
 });
@@ -15,20 +26,8 @@ const NavContainer = styled('div')({
   display: 'flex',
   justifyContent: 'space-between',
   alignItems: 'center', // Centralize verticalmente os itens
-  padding: '10px 20px', // Adicione um espaçamento interno
-  backgroundColor: '#d32f2f', // Cor de fundo da barra de navegação
-});
-
-
-const theme = createTheme({
-  palette: {
-    primary: {
-      main: '#d32f2f',
-    },
-    secondary: {
-      main: '#ffc107',
-    },
-  },
+  padding: '10px 0px', // Adicione um espaçamento interno
+  backgroundColor: theme.palette.primary.main,
 });
 
 const NavList = styled('ul')(({theme}) => ({
