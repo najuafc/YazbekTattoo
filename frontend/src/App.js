@@ -8,15 +8,17 @@ import Agendamento from "./componentes/Agendamento";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route path="/" exact element={<PaginaInicial/>} />
-        <Route path="/portfolio" element={<Portfolio/>} />
-        <Route path="/sobre" element={<Sobre/>}/>
-        <Route path="/agendamento" element={<Agendamento/>}/>
-        <Route path="/depoimentos" element={<Depoimentos/>}/>
-      </Routes>
-   </BrowserRouter>
+    <div>
+      <BrowserRouter>
+        <Routes>
+          <Route path="/" element={<PaginaInicial/>} />
+          <Route path="/portfolio" element={<Portfolio/>} />
+          <Route path="/sobre" element={<Sobre/>}/>
+          <Route path="/agendamento" element={<Agendamento/>}/>
+          <Route path="/depoimentos" element={<Depoimentos/>}/>
+        </Routes>
+         </BrowserRouter>
+    </div>
   );
 };
 

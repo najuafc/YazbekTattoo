@@ -11,7 +11,7 @@ const Footer = () => {
                 Endereço: Rua das Couves, 23 - Florianópolis/SC
             </Typography>
             <Typography variant="body2" align="center" className="mb-2">
-                Siga-nos no <a href="https://www.instagram.com/" style={{ marginRight: '10px'}}>Instagram</a>
+                Siga-nos no <a href="https://www.instagram.com/yazbektattoo/" style={{ marginRight: '10px'}}>Instagram</a>
                 Contato via <a href="https://www.whatsapp.com/?lang=pt_BR">WhatsApp</a>
             </Typography>
         </footer>
