@@ -13,7 +13,7 @@ const Formulario = () => {
 
 return (
     <div className="Formulario">
-        <h3>Agende sua tatuagem!</h3>
+        <h3 styled={{ color: 'white' }}>Agende sua tatuagem!</h3>
         <form>
         <Campo label="Nome: " value={nome} onChange={(e) => setNome(e.target.value)}/>
         <Campo label="Email: " value={email} onChange={(e) => setEmail(e.target.value)}/>
