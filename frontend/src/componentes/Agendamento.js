@@ -15,7 +15,7 @@ function Agendamento() {
         <div>
             <NavBar/>
             <AgendamentoContainer>
-                <Formulario styled={{ color: 'white' }}/>
+              <Formulario/>
             </AgendamentoContainer>
             <Footer/>
         </div>

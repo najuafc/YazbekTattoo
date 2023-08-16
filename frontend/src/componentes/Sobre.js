@@ -47,7 +47,7 @@ const SobreImage = styled('img')({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'left',
-    marginRight: '20%',
+    marginRight: '20%',marginTop: '0px',
     textAlign: 'left'
 });
 

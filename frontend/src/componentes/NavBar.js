@@ -9,11 +9,8 @@ import Logo from "./imagens/logo.png"
 const theme = createTheme({
   palette: {
     primary: {
-      main: '#c32c29',
-    },
-    secondary: {
-      main: '#ffc107',
-    },
+      main: '#a51d1d'
+    }
   },
 });
 

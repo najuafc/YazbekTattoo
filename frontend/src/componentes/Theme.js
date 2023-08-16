@@ -13,7 +13,6 @@ const theme = createTheme({
     MuiButton: {
       styleOverrides: {
         root: {
-          // Estilos que deseja aplicar a todos os botões
           textTransform: 'uppercase',
           borderRadius: 8,
           fontWeight: 'bold',
