@@ -26,6 +26,7 @@ const NavContainer = styled('div')({
   alignItems: 'center', // Centralize verticalmente os itens
   padding: '10px 0px', // Adicione um espaçamento interno
   backgroundColor: theme.palette.primary.main,
+  opacity: 0.9
 });
 
 const NavList = styled('ul')(({theme}) => ({

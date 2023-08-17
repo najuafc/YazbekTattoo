@@ -6,6 +6,13 @@ import Botao from "./Botao";
 import { Link } from 'react-router-dom';
 import { ThemeProvider } from '@mui/material/styles';
 import theme from './Theme';
+import styled from '@emotion/styled';
+
+const ListaStyled = styled('li')({
+    listStyleType: 'none',
+    color: '#b9b9b9',
+    padding: '2px'
+});
 
 function PaginaInicial() {
     return (
@@ -27,21 +34,27 @@ function PaginaInicial() {
                     </ThemeProvider>
                 </Link>
             </div>
-            <div id='portfolio-container' style={{ backgroundColor: '#a51d1d', padding: '20px', opacity: 0.9, display: 'flex', flexDirection: 'row', textAlign: 'center'}}>
-                <div id='portfolio-texto'>
+            <div className='portfolio-container' style={{ backgroundColor: '#a51d1d', opacity: 0.9, padding: '15px', textAlign: 'center'}}>
+                <div className='portfolio-texto'>
                 </div>
-                <div id='portfolio-lista'>
-                    <h3 style={{ color: '#b9b9b9'}}>Nossos estilos e técnicas</h3>
-                    <ul>
-                        <li style={{ color: '#b9b9b9'}}>Tradicionais: linhas grossas, cores vivas e design clássico</li>
-                        <li style={{ color: '#b9b9b9'}}>Minimalistas: linhas finas, formas geométricas simples e poucos detalhes</li>
-                        <li style={{ color: '#b9b9b9'}}>Geométricas: baseadas em formas geométricas como triângulos, círculos e linhas retas, resultando em designs complexos e simétricos</li>
-                        <li style={{ color: '#b9b9b9'}}>Pontilhismo: criadas por meio de pontos individuais que formam um design maior</li>
-                        <li style={{ color: '#b9b9b9'}}>Blackwork: geralmente feitas em tinta preta sólida, essas tatuagens usam contrastes fortes e padrões intrincados.</li>
-                        <li style={{ color: '#b9b9b9'}}>Escrita: nomes, frases, citações ou palavras significativas, frequentemente usando diferentes estilos de fonte</li>
-                        <li style={{ color: '#b9b9b9'}}>Natureza: inspiradas em elementos naturais como flores, folhas, árvores, animais e paisagens</li>
-                        <li style={{ color: '#b9b9b9'}}>Homenagem: criadas em memória de alguém querido, muitas vezes incluindo nomes, datas e símbolos significativos</li>
-                    </ul>
+                <div className='portfolio-lista'>
+                    <h1 style={{ color: '#b9b9b9' }}>Nossos estilos e técnicas</h1>
+                        <ul>
+                            <ListaStyled>
+                                <li style={{ color: '#b9b9b9', padding: '2px'}}><strong>Tradicionais:</strong> linhas grossas, cores vivas e design clássico</li>
+                                <li style={{ color: '#b9b9b9', padding: '2px'}}><strong>Minimalistas:</strong> linhas finas, formas geométricas simples e poucos detalhes</li>
+                                <li style={{ color: '#b9b9b9', padding: '2px'}}><strong>Geométricas:</strong> baseadas em formas geométricas como triângulos, círculos e linhas retas, resultando em designs complexos e simétricos</li>
+                                <li style={{ color: '#b9b9b9', padding: '2px'}}><strong>Pontilhismo:</strong> criadas por meio de pontos individuais que formam um design maior</li>
+                                <li style={{ color: '#b9b9b9', padding: '2px'}}><strong>Blackwork:</strong> geralmente feitas em tinta preta sólida, essas tatuagens usam contrastes fortes e padrões intrincados.</li>
+                                <li style={{ color: '#b9b9b9', padding: '2px'}}><strong>Escrita: </strong>nomes, frases, citações ou palavras significativas, frequentemente usando diferentes estilos de fonte</li>
+                                <li style={{ color: '#b9b9b9', padding: '2px'}}><strong>Natureza: </strong>inspiradas em elementos naturais como flores, folhas, árvores, animais e paisagens</li>
+                            </ListaStyled>
+                        </ul>
+                        <Link to='/agendamento'>
+                            <ThemeProvider theme={theme}>
+                                <Botao label="Agende sua tattoo agora!"/>
+                            </ThemeProvider>
+                        </Link>
                 </div>
             </div>
             <div id='footer'>

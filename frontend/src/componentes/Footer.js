@@ -10,7 +10,7 @@ const FooterContainer = styled('footer')({
     alignItems: 'center',
     paddingBottom: '3%',
     paddingTop: '2.5%',
-    justifyContent: 'center'
+    justifyContent: 'center',
 });
 
 const LinkColor = styled('a')({
