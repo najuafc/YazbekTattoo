@@ -13,11 +13,15 @@ const Formulario = () => {
     const [referencia, setReferencia] = useState(null);
 
 const FormularioContainer = styled.form({
-        padding: '20px',
+        padding: '50px',
         marginBottom: '5px',
-        borderRadius: '5px',
+        borderRadius: '20px',
         border: 'none',
-        width: '100%'
+        width: '100%',
+        backgroundColor: 'white',
+        marginLeft: 0,
+        marginRight: "50px"
+        
     });
 
 const campoStyle = {
@@ -30,17 +34,31 @@ const campoStyle = {
 
 const ContainerCentralizado = styled.div({
         display: 'flex',
-        flexDirection: 'column',
+        flexDirection: 'row',
         alignItems: 'center',
         justifyContent: 'center',
-        backgroundColor: '#0b0000',
-        borderRadius: '10px'
+        borderRadius: '10px',
+        gap: '150px'
     });
+
+const TextoPaginaAgendamento = styled('h2')({
+        display: 'flex', 
+        marginLeft: '5%',
+        borderRadius : '8px',
+        fontSize: '28px',
+        color: '#a51d1d',
+        textAlign: 'justify',
+        alignItems: 'left',
+        textAlign: 'justify'
+        
+});
 
 return (
     <ContainerCentralizado>
-        <div className="Formulario">
-            <h3 style={{ color: '#a51d1d' }}>Agende sua tatuagem!</h3>
+        <div>
+            <TextoPaginaAgendamento>Agende sua tatuagem conosco!<br></br> Preencha o formulário ao lado com suas informações<br></br>
+                    e em breve entraremos em contato para agendar o melhor horário para você.</TextoPaginaAgendamento>
+        </div>
             <form>
                 <FormularioContainer>
                     <Campo label="Nome: " value={nome} onChange={(e) => setNome(e.target.value)} style={campoStyle}/>
@@ -48,12 +66,13 @@ return (
                     <Campo label="Telefone: " value={telefone} onChange={(e) => setTelefone(e.target.value)} style={campoStyle}/>
                     <Campo label="Tamanho da tatuagem (em cm): " value={tamanho} type="number" onChange={(e) => setTamanho(e.target.value)} style={campoStyle}/>
                     <Campo label="Imagem de referência: " value={referencia} type="file" onChange={(e) => setReferencia(e.target.files[0])} style={campoStyle}/>
-                </FormularioContainer>
-                <ThemeProvider theme={theme}>
-                    <Botao label="Enviar" type="submit"/>
+                    <ThemeProvider theme={theme}>
+                    <div style={{ display: 'flex', justifyContent: 'center'}}>
+                        <Botao label="Enviar" type="submit"/>
+                    </div>
                 </ThemeProvider>
+                </FormularioContainer>
             </form>
-        </div>
     </ContainerCentralizado>
 );
 };
