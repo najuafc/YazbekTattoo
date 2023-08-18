@@ -49,7 +49,6 @@ const TextoPaginaAgendamento = styled('h2')({
         color: '#a51d1d',
         textAlign: 'justify',
         alignItems: 'left',
-        textAlign: 'justify'
         
 });
 

@@ -16,6 +16,9 @@
             textTransform: 'uppercase',
             borderRadius: 8,
             fontWeight: 'bold',
+            '&:hover': {
+              backgroundColor: '#7f1616', // Nova cor de fundo ao passar o mouse
+            },
           },
           containedPrimary: {
             backgroundColor: '#7f1616',
