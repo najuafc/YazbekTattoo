@@ -64,7 +64,7 @@ return (
                     <Campo label="Email: " value={email} onChange={(e) => setEmail(e.target.value)} style={campoStyle}/>
                     <Campo label="Telefone: " value={telefone} onChange={(e) => setTelefone(e.target.value)} style={campoStyle}/>
                     <Campo label="Tamanho da tatuagem (em cm): " value={tamanho} type="number" onChange={(e) => setTamanho(e.target.value)} style={campoStyle}/>
-                    <Campo label="Imagem de referência: " value={referencia} type="file" onChange={(e) => setReferencia(e.target.files[0])} style={campoStyle}/>
+                    <Campo label="Imagem de referência: " value={referencia} type="file" name="imagem" onChange={(e) => setReferencia(e.target.files[0])} style={campoStyle}/>
                     <ThemeProvider theme={theme}>
                     <div style={{ display: 'flex', justifyContent: 'center'}}>
                         <Botao label="Enviar" type="submit"/>
