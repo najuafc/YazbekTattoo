@@ -33,3 +33,4 @@ const Campo = ({ label, value, onChange, type}) => {
 };
 
 export default Campo; 
+
