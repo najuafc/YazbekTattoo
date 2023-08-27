@@ -2,11 +2,12 @@ import * as React from 'react';
 import TextField from '@mui/material/TextField';
 import Box from '@mui/material/Box';
 
-const Campo = ({ label, value, onChange, type}) => {
+const Campo = ({name, label, value, onChange, type}) => {
   if (type === "file") {
     return (
       <Box margin="10px">
         <TextField
+          name={name}
           label = {label}
           onChange={onChange}
           type='file'
@@ -20,6 +21,7 @@ const Campo = ({ label, value, onChange, type}) => {
   return (
     <Box display="flex" flexDirection="column" alignItems="flex-start" margin="10px">
       <TextField
+        name={name}
         label = {label}
         value = {value}
         onChange = {onChange}

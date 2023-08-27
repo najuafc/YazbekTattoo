@@ -67,16 +67,16 @@ return (
         <div style={{ backgroundColor: 'white'}}>
             <div>
                 <TextoPaginaAgendamento>
-                        <h3>Agende sua tatuagem conosco!</h3><br></br> Preencha o formulário ao lado com suas informações<br></br>
+                        <h3>Agende sua tatuagem conosco!</h3> Preencha o formulário ao lado com suas informações<br></br>
                             e em breve entraremos em contato para agendar o melhor horário para você.
                 </TextoPaginaAgendamento>
                 </div>
-                    <form onSubmit={handleSubmit}>
-                            <Campo label="Nome: " value={nome} onChange={(e) => setNome(e.target.value)} style={campoStyle}/>
+                    <form onSubmit={handleSubmit} action="http://localhost:4000/formulario" method="post" encType="multipart/form-data">
+                            <Campo label="Nome: " value={nome} onChange={(e) => setNome(e.target.value)} style={campoStyle} name='nome'/>
                             <Campo label="Email: " value={email} onChange={(e) => setEmail(e.target.value)} style={campoStyle} type='email' name='email'/>
                             <Campo label="Telefone: " value={telefone} onChange={(e) => setTelefone(e.target.value)} type='tel'name='telefone' />
                             <Campo label="Tamanho da tatuagem (em cm): " value={tamanho} onChange={(e) => setTamanho(e.target.value)} style={campoStyle} type="number" name='tamanho'/>
-                            <Campo label="Imagem de referência: " value={referencia} onChange={(e) => setReferencia(e.target.value)} style={campoStyle} type="file" name="imagem"/>
+                            <Campo label="Imagem de referência: " value={referencia} onChange={(e) => setReferencia(e.target.value)} style={campoStyle} type="file" name="imagem_rota"/>
                             <ThemeProvider theme={theme}>
                             <div style={{ display: 'flex', justifyContent: 'center'}}>
                                 <Botao label="Enviar" type="submit"/>
