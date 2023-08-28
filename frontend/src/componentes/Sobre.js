@@ -6,26 +6,35 @@ import { styled } from '@mui/system';
 import { Grid } from '@mui/material';
 
 const SobreImage = styled('img')({
-    width: '500px', // Imagem ocupará 100% da largura do container
-    maxHeight: '500px', // Altura máxima para todas as imagens
-    objectFit: 'cover', // Redimensiona a imagem mantendo a pr
-    borderRadius: '8px', // Borda arredondada
-    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)', // Sombra suave
+    width: '500px', 
+    maxHeight: '500px', 
+    objectFit: 'cover', 
+    borderRadius: '8px', 
+    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
     marginLeft: '40%',
     backgroundColor: 'red',
     gap: '10px',
     marginTop: '5%',
-    marginBottom: '5%'
+    marginBottom: '5%',
+
+    '@media (max-width: 1265px)': {
+      marginLeft: '20px'
+    }
+
   });
 
   const SobreContainer = styled(Grid)({
     display: 'grid',
-    gridTemplateColumns: '1fr 1fr', // Duas colunas com a mesma largura
-    gap: '10px', // Espaçamento entre as colunas
+    gridTemplateColumns: '1fr 1fr', 
+    gap: '200px', // espaçamento entre as colunas
     alignItems: 'center',
-    justifyContent: 'space-between',
     backgroundColor: '#0b0000',
     opacity: "0.9",
+  
+    '@media (max-width: 1265px)': {
+      gridTemplateColumns: '1fr', 
+      
+    },
   });
 
   const TextoTrajetoria = styled('p')({
@@ -34,13 +43,22 @@ const SobreImage = styled('img')({
     padding: '0px',
     fontSize: '18px',
     color: '#b9b9b9',
-    textAlign: 'justify'
+    textAlign: 'justify',
+
+    '@media (max-width: 1265px)': {
+      paddingLeft: '20px'
+    }
   });
   
   const TituloTrajetoria = styled('h2')({
     fontSize: '24px',
     color: '#b9b9b9',
-    fontWeight: 'bold'
+    fontWeight: 'bold',
+    paddingTop: '20px',
+
+    '@media (max-width: 1265px)': {
+      paddingLeft: '20px'
+    }
   });
 
   const CenteredContent = styled('div')({
