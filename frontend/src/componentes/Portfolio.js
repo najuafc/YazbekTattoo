@@ -15,12 +15,17 @@ const PortfolioContainer = styled(Grid)({
   gap: '16px', // Espaçamento entre as fotos
   backgroundColor: '#0b0000',
   opacity: 0.9,
-  padding: '40px'
+  padding: '40px',
+
+  '@media (max-width: 1350px)': {
+    gridTemplateColumns: '1fr', // Uma coluna
+  },
 });
 
 const PortfolioImage = styled('img')({
     width: '100%', // Imagem ocupará 100% da largura do container
     maxHeight: '300px', // Altura máxima para todas as imagens
+    minHeight: '300px',
     objectFit: 'cover', 
     borderRadius: '8px',
     boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',

@@ -7,7 +7,7 @@ import styled from '@emotion/styled';
 const AgendamentoContainer = styled('form') ({
     backgroundColor: '#0b0000',
     opacity: 0.9,
-    padding: '40px'
+    padding: '40px',
 })
 
 function Agendamento() {
