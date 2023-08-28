@@ -21,9 +21,9 @@ const PortfolioContainer = styled(Grid)({
 const PortfolioImage = styled('img')({
     width: '100%', // Imagem ocupará 100% da largura do container
     maxHeight: '300px', // Altura máxima para todas as imagens
-    objectFit: 'cover', // Redimensiona a imagem mantendo a pr
-    borderRadius: '8px', // Borda arredondada
-    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)', // Sombra suave
+    objectFit: 'cover', 
+    borderRadius: '8px',
+    boxShadow: '0px 4px 6px rgba(0, 0, 0, 0.1)',
   });
 
 
