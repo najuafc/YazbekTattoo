@@ -1,12 +1,4 @@
 //dados
-var id;
-var nome;
-var email;
-var telefone;
-var tamanho;
-var imagem_rota;
-var data_hota_cadastro;
-
 const Sequelize = require('sequelize');
 const database = require('./db');
  
