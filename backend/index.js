@@ -2,6 +2,7 @@ const express = require('express');
 const app = express();
 const path = require('path');
 
+app.use(express.static(path.join('../frontend/public'))); //para a res
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
@@ -35,7 +36,8 @@ app.post('/formulario', upload.single('imagem_rota'),  (req, res) => {
         });
         console.log(req.body);
         console.log(req.body.nome);
-        res.json("Ok");
+        res.sendFile(path.join(__dirname, '../frontend/public', 'pagina.html'));
+
     } catch (error) {
         console.error(error);
         res.status(500).json({ error: 'Erro ao salvar os dados.' });
