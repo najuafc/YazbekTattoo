@@ -30,5 +30,13 @@ const Cliente = database.define('cliente', {
         allowNull: false
     }
 });
- 
+
+database.sync()
+  .then(() => {
+    console.log('Tabela de clientes criada no banco de dados');
+  })
+  .catch(error => {
+    console.error('Erro ao criar tabela de clientes:', error);
+  });
+  
 module.exports = Cliente;
