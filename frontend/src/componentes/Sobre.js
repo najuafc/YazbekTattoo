@@ -33,6 +33,7 @@ const SobreImage = styled('img')({
   
     '@media (max-width: 1265px)': {
       gridTemplateColumns: '1fr', 
+      gap: '0px'
       
     },
   });

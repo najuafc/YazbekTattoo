@@ -21,7 +21,16 @@ function PaginaInicial() {
                 <NavBar/>
                 <Carrossel/>
             </div>
-            <div id='sobre-container' style={{ marginTop: '400px', padding: '20px', backgroundColor: '#0b0000', opacity: 0.9, textAlign: 'center'}}>
+            <div id='sobre-container' style={{ 
+                marginTop: '400px',
+                padding: '20px', 
+                backgroundColor: '#0b0000', 
+                opacity: 0.9, 
+                textAlign: 'center',
+                '@media (max-width: 1067px)': {
+                    marginTop: '0px', // Aplicar zoom na imagem em telas menores
+                }
+                }}>
                 <div id='sobre-texto' style={{ marginLeft: '10px', color: '#b9b9b9'}}> 
                     <h1>Sobre Nós:</h1>
                     <p>Na Yazbek Tattoo, acreditamos que a tatuagem é uma forma de arte que permite a você contar sua história única através da pele.</p>
