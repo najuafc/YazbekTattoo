@@ -8,8 +8,8 @@ const FooterContainer = styled('footer')({
     padding: '30px',
     flexDirection: 'column', 
     alignItems: 'center',
-    paddingBottom: '3%',
-    paddingTop: '2.5%',
+    paddingBottom: '5%',
+    paddingTop: '5%',
     justifyContent: 'center',
 });
 

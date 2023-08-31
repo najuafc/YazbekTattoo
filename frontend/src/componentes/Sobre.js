@@ -66,7 +66,7 @@ const SobreImage = styled('img')({
     flexDirection: 'column',
     alignItems: 'left',
     marginRight: '20%',marginTop: '0px',
-    textAlign: 'left'
+    textAlign: 'left',
 });
 
 function Sobre() {
