@@ -7,7 +7,7 @@ import FotoCarrossel3 from './imagens/fotocarrossel3.jpg';
 
 export default function Carrossel() {
     return (
-      <div style={{ display: 'block', maxWidth: '100%', maxHeight: '200px', margin: '0 auto'}}>
+      <div style={{ display: 'block', width: '100%', height: '200px', margin: '0 auto'}}>
         <Carousel>
           <Carousel.Item interval={1500}>
             <img
