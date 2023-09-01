@@ -27,9 +27,6 @@ function PaginaInicial() {
                 backgroundColor: '#0b0000', 
                 opacity: 0.9, 
                 textAlign: 'center',
-                '@media (max-width: 1067px)': {
-                    marginTop: '0px', // Aplicar zoom na imagem em telas menores
-                }
                 }}>
                 <div id='sobre-texto' style={{ marginLeft: '10px', color: '#b9b9b9'}}> 
                     <h1>Sobre Nós:</h1>
