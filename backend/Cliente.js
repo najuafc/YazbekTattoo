@@ -1,7 +1,9 @@
-//dados
+//tabela
 const Sequelize = require('sequelize');
-const database = require('./db');
- 
+const database = require('./db'); //importando o arquivo de config da conexão com o bc (em ./db)
+
+//Definição do modelo de dados 'Cliente' - mapeado para uma tabela chamada 'cliente' no bd
+//o segundo argumento descreve a estrutura da tabela
 const Cliente = database.define('cliente', {
     id: {
         type: Sequelize.INTEGER,
