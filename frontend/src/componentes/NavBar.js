@@ -63,11 +63,11 @@ const NavBar = () => {
           <ImagemLogo className='imagemLogo' src={Logo}/>
           <div className={`${'menuSanduiche'} ${ showMenu ? 'show' : '' }`}> 
             <NavList>
-              <NavItem><Link to="/" style={{ textDecoration: 'none', color:'black' }}>Página Inicial</Link></NavItem>
-              <NavItem><Link to="/portfolio" style={{ textDecoration: 'none', color:'black' }}>Portfólio</Link></NavItem>
-              <NavItem><Link to="/sobre" style={{ textDecoration: 'none', color:'black' }}>Sobre</Link></NavItem>
-              <NavItem><Link to="/agendamento" style={{ textDecoration: 'none', color:'black' }}>Agendamento</Link></NavItem>
-              <NavItem><Link to="/depoimentos" style={{ textDecoration: 'none', color:'black' }}>Depoimentos</Link></NavItem>
+                <NavItem><Link to="/" style={{ textDecoration: 'none', color:'black' }}>Página Inicial</Link></NavItem>
+                <NavItem><Link to="/portfolio" style={{ textDecoration: 'none', color:'black' }}>Portfólio</Link></NavItem>
+                <NavItem><Link to="/sobre" style={{ textDecoration: 'none', color:'black' }}>Sobre</Link></NavItem>
+                <NavItem><Link to="/agendamento" style={{ textDecoration: 'none', color:'black' }}>Agendamento</Link></NavItem>
+                <NavItem><Link to="/depoimentos" style={{ textDecoration: 'none', color:'black' }}>Depoimentos</Link></NavItem>
             </NavList>
           </div>
         </NavContainer>
